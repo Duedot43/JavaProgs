@@ -1,3 +1,5 @@
+package org.duedot43.shop;
+
 import java.util.Scanner;
 public class Customer {
         private String name;
@@ -36,7 +38,7 @@ public class Customer {
             }
             System.out.println("Would you like to buy more items? (y/n)");
             String answer = input.next();
-            if (answer == "y") {
+            if ("y".equals(answer)) {
                 return 1;
             } else {
                 shop.customers--;

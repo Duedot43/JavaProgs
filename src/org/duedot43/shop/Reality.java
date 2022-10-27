@@ -1,3 +1,5 @@
+package org.duedot43.shop;
+
 import java.util.Scanner;
 public class Reality {
     public static void main(String[] args) {

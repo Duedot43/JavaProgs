@@ -1,3 +1,5 @@
+package org.duedot43.shop;
+
 public class Shop {
     private String name;
     private  String[] stock;
@@ -30,7 +32,6 @@ public class Shop {
     }
     public double buy(int itemIndex, int quantity) {
         System.out.println("You bought " + quantity + " " + this.stock[itemIndex] + "(s) for " + this.prices[itemIndex] + " each.");
-        double total = this.prices[itemIndex] * quantity;
-        return total;
+        return this.prices[itemIndex] * quantity;
     }
 }
