@@ -1,4 +1,4 @@
-package org.duedot43.avg;
+package org.duedot43.unit2.avg;
 
 public class Main {
     public static void main(String[] args) {

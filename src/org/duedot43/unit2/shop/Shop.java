@@ -1,4 +1,4 @@
-package org.duedot43.shop;
+package org.duedot43.unit2.shop;
 
 public class Shop {
     private String name;

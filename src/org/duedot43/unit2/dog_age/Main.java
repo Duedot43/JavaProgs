@@ -1,4 +1,4 @@
-package org.duedot43.dog_age;
+package org.duedot43.unit2.dog_age;
 
 public class Main {
     public static void main(String[] args) {

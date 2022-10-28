@@ -1,4 +1,4 @@
-package org.duedot43.atm;
+package org.duedot43.unit2.atm;
 
 import java.util.Scanner;
 public class Reality {

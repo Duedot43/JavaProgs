@@ -1,4 +1,4 @@
-package org.duedot43.atm;
+package org.duedot43.unit2.atm;
 
 public class Atm {
     private int[][] accounts;
