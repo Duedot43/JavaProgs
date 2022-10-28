@@ -1,14 +1,14 @@
-package org.duedot43.unit2.shop;
+package org.duedot43.unit2.shop.old;
 
 public class Shop {
     private String name;
-    private  String[] stock;
+    private String[] stock;
     private double[] prices;
     public int customers = 0;
 
     public Shop() {
-        this.prices = new double[]{ 1.00, 2.00, 3.00, 4.00, 5.00 };
-        this.stock = new String[]{ "Pen", "Baseball", "Stress Ball", "Small Watch", "USB Drive" };
+        this.prices = new double[] { 1.00, 2.00, 3.00, 4.00, 5.00 };
+        this.stock = new String[] { "Pen", "Baseball", "Stress Ball", "Small Watch", "USB Drive" };
         this.name = "Small Things";
     }
 
@@ -17,7 +17,6 @@ public class Shop {
         this.stock = stock;
         this.name = name;
     }
-
 
     public String[] getStock() {
         return this.stock;
@@ -30,8 +29,10 @@ public class Shop {
         }
         return output;
     }
+
     public double buy(int itemIndex, int quantity) {
-        System.out.println("You bought " + quantity + " " + this.stock[itemIndex] + "(s) for " + this.prices[itemIndex] + " each.");
+        System.out.println("You bought " + quantity + " " + this.stock[itemIndex] + "(s) for " + this.prices[itemIndex]
+                + " each.");
         return this.prices[itemIndex] * quantity;
     }
 }

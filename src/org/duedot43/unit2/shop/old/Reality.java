@@ -1,10 +1,11 @@
-package org.duedot43.unit2.shop;
+package org.duedot43.unit2.shop.old;
 
 import java.util.Scanner;
+
 public class Reality {
     public static void main(String[] args) {
-        double[] prices = new double[]{ 1.00, 2.00, 3.00, 4.00, 5.00 };
-        String[] stock = new String[]{ "Pen", "Baseball", "Stress Ball", "Small Watch", "USB Drive" };
+        double[] prices = new double[] { 1.00, 2.00, 3.00, 4.00, 5.00 };
+        String[] stock = new String[] { "Pen", "Baseball", "Stress Ball", "Small Watch", "USB Drive" };
         String shopName = "Small Things";
 
         Scanner input = new Scanner(System.in);

@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch God",
+            "request": "launch",
+            "mainClass": "org.duedot43.unit2.shop.sub.God",
+            "projectName": "JavaProgs_e7b3e200"
+        },
+        {
+            "type": "java",
             "name": "Launch Main",
             "request": "launch",
             "mainClass": "org.duedot43.unit2.avg.Main",
@@ -19,9 +26,9 @@
         },
         {
             "type": "java",
-            "name": "Launch Reality",
+            "name": "Launch Shop Old",
             "request": "launch",
-            "mainClass": "org.duedot43.unit2.shop.Reality",
+            "mainClass": "org.duedot43.unit2.shop.old.Reality",
             "projectName": "JavaProgs_79f025e0"
         },
         {
