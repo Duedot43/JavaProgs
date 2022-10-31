@@ -1,10 +1,16 @@
 package org.duedot43.unit2.shop.newsub;
 
 public class Shop extends Reality {
-    private String name = "Small Things";
-    private String[] stock = { "Pen", "Baseball", "Stress Ball", "Small Watch", "USB Drive" };
-    private double[] prices = { 1.00, 2.00, 3.00, 4.00, 5.00 };
+    private String name;
+    private String[] stock;
+    private double[] prices;
 
+
+    public Shop() {
+        this.name = "Small Things";
+        this.stock = new String[]{ "Pen", "Baseball", "Stress Ball", "Small Watch", "USB Drive" };
+        this.prices = new double[]{ 1.00, 2.00, 3.00, 4.00, 5.00 };
+    }
 
     public Shop(double[] prices, String[] stock, String name) {
         this.prices = prices;
