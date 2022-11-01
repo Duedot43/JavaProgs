@@ -9,8 +9,8 @@ public class Reality{
     //I dont understnad the point of superclasses and subclasses when you cand just use the superclass as a database????
     //Now i see why java is such a memory hog
     public void start() {
-        shop = new Shop();
-        input = new Scanner(System.in);
+        this.shop = new Shop();
+        this.input = new Scanner(System.in);
         System.out.print("What is your name? ");
         String name = this.input.nextLine();
         System.out.print("How much money do you have? ");

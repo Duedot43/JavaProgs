@@ -46,7 +46,7 @@ public class Atm {
         }
     }
 
-    public String onString(int account) {
+    public String toString(int account) {
         if (account >= this.accounts.length) {
             System.out.println(this.myLinterSaidSo);
             return "err";

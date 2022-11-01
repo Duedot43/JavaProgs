@@ -17,7 +17,7 @@ public class Reality {
 
         user.exist();
         while (user.walkUp(atm, input) == 0);
-        System.out.println(user.onString(atm));
+        System.out.println(user.toString(atm));
         input.close();
     }
 }

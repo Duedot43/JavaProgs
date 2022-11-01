@@ -22,26 +22,26 @@ public class Customer {
         System.out.println("Welcome to reality " + this.name);
     }
 
-    public String onString(Atm atm) {
-        return "Your current balance is " + atm.onString(card) + "\nYou have $" + this.money + " on you.";
+    public String toString(Atm atm) {
+        return "Your current balance is " + atm.toString(card) + "\nYou have $" + this.money + " on you.";
     }
 
     public int walkUp(Atm atm, Scanner input) {
-        System.out.println(this.onString(atm));
+        System.out.println(this.toString(atm));
         System.out.print("What would you like to do?\n1: View money\n2: Withdraw\n3: Deposit\n>> ");
         int choice = input.nextInt();
         if (choice <= 0 || choice > 3) {
             System.out.println("Invalid choice!");
             return 0; // 0 is normal exit aka the user wants to do it again
         } else if (choice == 1) {
-            System.out.println(this.onString(atm));
+            System.out.println(this.toString(atm));
         } else if (choice == 2) {
             System.out.print("How much money would you like to withdraw you can withdraw a maximum of $" + atm.getAccount(this.card) + "\n>> ");
             int withdraw = input.nextInt();
             if (atm.getAccount(this.card) >= withdraw){
                 atm.withdraw(withdraw, this.card);
                 this.money += withdraw;
-                System.out.println(this.onString(atm));
+                System.out.println(this.toString(atm));
             } else {
                 System.out.println("You dont have enough money to do that!");
                 return 0;
@@ -52,7 +52,7 @@ public class Customer {
             if (this.money >= deposit) {
                 atm.deposit(deposit, this.card);
                 this.money -= deposit;
-                System.out.println(this.onString(atm));
+                System.out.println(this.toString(atm));
             } else {
                 System.out.println("You do not have enough money!");
                 return 0;

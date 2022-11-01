@@ -18,7 +18,7 @@ public class Shop extends Reality {
         this.name = name;
     }
 
-    public String onString() {
+    public String toString() {
         String output = "Welcome to " + this.name + "!\n";
         for (int i=0; i<this.prices.length; i++) {
             output += i + " " + this.stock[i] + " - " + this.prices[i] + "\n";
