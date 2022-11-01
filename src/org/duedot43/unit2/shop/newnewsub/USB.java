@@ -7,13 +7,13 @@ public class USB extends SmallThings{
     public USB() {
         super();
         this.name = "Ball";
-        this.price = 20 * super.clients;
+        this.price = 20 * super.getClients();
     }
 
     public USB(String name, int price) {
         super();
         this.name = name;
-        this.price = price * super.clients;
+        this.price = price * super.getClients();
     }
 
     public int getPrice() {
@@ -25,6 +25,6 @@ public class USB extends SmallThings{
     }
 
     public String toString() {
-        return this.name + " for " + this.price;
+        return "There are " + super.getClients() + " clients in the shop.";
     }
 }
