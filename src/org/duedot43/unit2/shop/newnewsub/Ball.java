@@ -5,13 +5,13 @@ public class Ball extends SmallThings{
     private int price;
 
     public Ball() {
-        super();
+        super(1);
         this.name = "Ball";
         this.price = 10 * super.getClients();
     }
 
     public Ball(String name, int price) {
-        super();
+        super(1);
         this.name = name;
         this.price = price * super.getClients();
     }
