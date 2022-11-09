@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch Main",
+            "request": "launch",
+            "mainClass": "org.duedot43.unit2.test.Main",
+            "projectName": "JavaProgs_e7b3e200"
+        },
+        {
+            "type": "java",
             "name": "Launch God",
             "request": "launch",
             "mainClass": "org.duedot43.unit2.shop.sub.God",
